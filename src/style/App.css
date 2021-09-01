@@ -1,0 +1,10 @@
+.container {
+  padding: 30px;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+}
