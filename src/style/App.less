@@ -10,10 +10,71 @@
   }
 
   .search-block {
+    text-align: center;
     box-shadow: 4px 5px 12px #8080809c;
     border-radius: 20px;
     min-height: 400px;
     margin: 50px 20px;
     padding: 50px;
+
+    #searchForm {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+
+      .inputContainer {
+        width: 100%;
+        max-width: 400px;
+        input {
+          height: 50px;
+        }
+      }
+      .submitContainer {
+        button {
+          height: 50px;
+        }
+      }
+    }
+    .searchedLocation {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .weather-block {
+      .temp {
+        span {
+          padding: 5px;
+          font-weight: 600;
+        }
+      }
+      .weatherCard {
+        margin-bottom: 10px;
+        .weatherCondition {
+          color: #3e3e73;
+          font-size: 18px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    .title {
+      font-size: 16px;
+    }
+
+    .search-block {
+      padding: 15px;
+      #searchForm {
+        display: block;
+        .inputContainer input {
+          &::placeholder {
+            font-size: 10px;
+          }
+        }
+      }
+    }
   }
 }
